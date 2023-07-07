@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a132926ceb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm<span> Aniket</span><br> from Noida, India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------about---------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_20230507_223333.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>An engineering student pursuing B.Tech in Computer Science and Engineering with an
+                         unwavering dedication to excellence and an insatiable curiosity.I want to get into
+                         IT industry where I can use and apply my skills to add on to the society. Have 
+                         ability to work under pressure with dedication.Beyond these professional skills,I 
+                         have exceptional work ethic, resilience, and collaborative spirit.
+                         I possess communication skills, fostering meaningful connections with colleagues
+                         and clients alike. My friendly and approachable demeanor makes them a natural team
+                         player and an asset to any collaborative environment.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Backened and Database</span><br>PHP and JSP, SQL/MYSQL</li>
+                            <li><span>Programming Languages</span><br>C, C++, Python, Java</li>
+                            <li><span>Data Structures</span><br>C/C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Internshala Student Partner</li>
+                            <li><span>2021 - 2022</span><br>Web Interface Designer at LetsGrowMore</li>
+                            <li><span>2020 - 2021</span><br>Web Developer at Oasis InfoByte</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Graduation</span><br>85% until 5th Semester</li>
+                            <li><span>Senior Secondary </span><br>Completed with 93.4% in 2020</li>
+                            <li><span>High School</span><br>Completed with 95% in 2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------Services-------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <hi class="sub-title">My Services</hi>
+            <div class="services-list">
+                <div class="learn-more">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Have knowledge of Web Development. I have worked on skills and technologies such 
+                       as HTML, CSS, JavaScript with Server side technologies like PHP, JSP</p>
+                        <a href="https://www.linkedin.com/in/aniket-srivastava-861624226/" >Learn More</a>
+                </div>
+                <div class="learn-more">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2>Tutor</h2>
+                    <p>I have a passion of teaching. I have worked as a Mentor where I
+                       have taught Maths, Physics, Chemistry, C, C++ and many more subjects</p>
+                        <a href="https://www.linkedin.com/in/aniket-srivastava-861624226/" >Learn More</a>
+                </div>
+                <div class="learn-more">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Data Structures</h2>
+                    <p>I have keen interest in solving questions based on Data Structures and Algorithm.
+                       I have used Programming languages such as C and Cpp for Data Structures and Algorithms.
+                    </p>
+                        <a href="https://www.linkedin.com/in/aniket-srivastava-861624226/" >Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------Portfolio------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>ToDo App</h3>
+                        <p>A web App Designed using HTML, CSS, JS where you can add or delete your task accordingly as per date</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work" >
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Digital Library</h3>
+                        <p>A web App created for my college. 'Granth' can automate all the existing function of library</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>A Website Designed using HTML, CSS, JS where I have added my complete personal and professional details</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Rock Paper Scissor</h3>
+                        <p>A Game Designed using HTML, CSS, JS where you can play with computer. It also has feautures like AutoPlay</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://github.com/Aniket2072003?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -----------------------Contact---------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aniket2072003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9304856287</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Aniket2072003"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Aniket_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name = "submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Aniket <i class="fa-solid fa-circle-info"></i> 2023 Personal Portfolio</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
